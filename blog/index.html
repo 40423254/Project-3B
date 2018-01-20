@@ -96,6 +96,9 @@
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
+                         <li><a href="./pages/about/">
+                             About
+                          </a></li>
                         <li >
                             <a href="./category/course.html">Course</a>
                         </li>
@@ -118,6 +121,27 @@
     <div class="row">
         <div class="col-sm-9">
 
+            <article>
+                <h2><a href="./20180120-matplotlib-installation-problem.html">安裝matplotlib及其他模組遇到之問題</a></h2>
+                <div class="summary"><p>Unofficial Windows Binaries for Python Extension Packages : 
+https://www.lfd.uci.edu/~gohlke/pythonlibs/</p>
+<p>我在1/20號前利用python簡單編譯一個計算齒輪模數及速比的程式。原定是將使用matplotlib來對齒輪進行繪圖，而在安裝時遇到許多問題。以下為遇到問題之解決方法：</p>
+<ol>
+<li>安裝matplotlib : 用git clone進行下載。在python shell上輸入import matplotlib。
+                             遇到問題 : 缺少dateutil。</li>
+</ol>
+<iframe src="./../pictures/problem1-require-dateutil.jpg" width="640" height="347" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<ol>
+<li>缺少dateutil : 輸入easy_install python-dateutil進行安裝。安裝好後將資料夾放至C:\Python34\Lib\site-packages。</li>
+</ol>
+<p>參考資料 : https://jingyan.baidu.com/article/aa6a2c14d5aa7f0d4c19c4e2.html</p>
+<ol>
+<li>缺少six : 到'https://pypi.python.org/pypi/six ...</li></ol>
+                    <a class="btn btn-default btn-xs" href="./20180120-matplotlib-installation-problem.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
             <article>
                 <h2><a href="./2017springCD-Week18.html">2017CD第十八週</a></h2>
                 <div class="summary">
@@ -181,17 +205,6 @@
                 </div>
             </article>
             <hr/>
-            <article>
-                <h2><a href="./2017springCD-Week10.html">2017CD第十週</a></h2>
-                <div class="summary"><h3>Python的語法介紹1</h3>
-<h3>這邊以編輯簡單程式碼的一些指令為主</h3>
-<h4>1.print(' ') :在兩個單引號之間輸入任何數字或文字,按下enter來執行就會出現你剛剛所輸入的內容</h4>
-<h4>2.變數 :指定一個東西為某個東西 ,譬如說在視窗中輸入A = 125 , 按下enter執行的話下一行是空白的,這時候再輸入A,下一行會出現125 ,這是用來定義的功能</h4>
-<h4>3.input :這是輸入資料的功能,譬如說輸入 A = input(),在下一行可以輸入</h4>
-                    <a class="btn btn-default btn-xs" href="./2017springCD-Week10.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
 
         <ul class="pagination">
                 <li class="prev disabled"><a href="#">&laquo;</a></li>
@@ -212,6 +225,11 @@
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
                 <ul class="list-group" id="recentposts">
                     <li class="list-group-item">
+                        <a href="./20180120-matplotlib-installation-problem.html">
+                            安裝matplotlib及其他模組遇到之問題
+                        </a>
+                    </li>
+                    <li class="list-group-item">
                         <a href="./2017springCD-Week18.html">
                             2017CD第十八週
                         </a>
@@ -229,11 +247,6 @@
                     <li class="list-group-item">
                         <a href="./2017springCD-Week15-2.html">
                             2017CD第十五週-2
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="./2017springCD-Week15.html">
-                            2017CD第十五週
                         </a>
                     </li>
                 </ul>
@@ -287,7 +300,7 @@
    <div class="container">
       <hr>
       <div class="row">
-         <div class="col-xs-10">&copy; 2017 KMOL
+         <div class="col-xs-10">&copy; 2018 KMOL
             &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
             <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
